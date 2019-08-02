@@ -168,8 +168,18 @@ end
 
 def player_stats(player_name)
   pStats = {}
-  game_hash.collect do |key, value|
-  value[:team_name]
+  game_hash.collect do |key, team|
+    team.each do |attribute, _data|
+      next unless attribute == :players
+
+      game_hash[key][attribute].each do |player|
+        next unless player[:player_name] == sought_player_name
+
+        pStats = player.delete_if do |k, _v|
+          k == :player_name
+        end
+      end
+    end
   end
   pStats
 end
