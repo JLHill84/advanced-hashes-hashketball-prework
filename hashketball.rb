@@ -151,6 +151,7 @@ def team_names()
   game_hash.each do |key, value|
     nameArray.pop(game_hash[:team_name])
   end
+  return nameArray
     
 end
 
