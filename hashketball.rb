@@ -158,7 +158,7 @@ def player_numbers(team_name)
     next unless value[:team_name] == team_name
     value.each do |attribute, data|
       data.each do |data|
-        numbers << 
+        numbers << data[:number]
       end
     end
   end 
