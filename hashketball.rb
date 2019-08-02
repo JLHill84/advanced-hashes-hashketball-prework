@@ -146,6 +146,12 @@ def team_colors(team_name)
   end
 end
 
+def team_names()
+  nameArray = []
+  game_hash.each do |key, value|
+    nameArray.pop(game_hash[:team_name])
+    
+end
 
 
 
