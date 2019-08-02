@@ -66,7 +66,7 @@ def game_hash
           :steals => 2,
           :blocks => 7,
           :slam_dunks => 2},
-        {:player_name => "Bismack Biyombo",
+         {:player_name => "Bismack Biyombo",
           :number => 0,
           :shoe => 16,
           :points => 12,
