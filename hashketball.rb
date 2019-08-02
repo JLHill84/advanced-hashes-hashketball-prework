@@ -168,8 +168,16 @@ end
 
 def player_stats(player_name)
   pStats = {}
-  
-  
+  game_hash.each do |key, value|
+    next unless value[:team_name] == team_name
+    value.each do |attribute, data|
+      next unless attribute == :players
+      data.each do |data|
+        numbers << data[:number]
+      end
+    end
+  end 
+  pStats
 end
 
 def big_shoe_rebounds
