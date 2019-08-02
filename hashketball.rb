@@ -157,7 +157,8 @@ def player_numbers(team_name)
   game_hash.each do |key, value|
     next unless value[:team_name] == team_name
     value.each do |attribute, data|
-      data.each do 
+      data.each do |data|
+        numbers << 
       end
     end
   end 
