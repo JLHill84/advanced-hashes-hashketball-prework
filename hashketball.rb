@@ -171,10 +171,8 @@ def player_stats(player_name)
   game_hash.collect do |key, value|
     value.each do |attribute, _data|
       next unless attribute == :players
-
       game_hash[key][attribute].each do |player|
         next unless player[:player_name] == player_name
-
         pStats = player.delete_if do |k, _v|
           k == :player_name
         end
