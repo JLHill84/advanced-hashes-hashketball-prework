@@ -144,9 +144,9 @@ def team_colors(team_name)
  game_hash.each do |key, value|
     value.each do |attribute, data|
       next unless attribute == :colors
-      data.each do |player|
+     
         return team[:colors] if team[:team_name] == team_name
-      end
+     
     end
   end
 end
