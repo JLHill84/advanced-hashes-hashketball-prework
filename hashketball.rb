@@ -137,6 +137,7 @@ def team_colors(team_name)
       if v2 == team_name
       return v2[:colors]
     end
+    end
   end
 end
 
