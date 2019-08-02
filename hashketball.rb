@@ -136,7 +136,6 @@ def team_colors(team_name)
     value.each do |k2, v2|
       return v2[:colors] if v2[:team_name] == team_name
     end
-    end
   end
 end
 
