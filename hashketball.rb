@@ -119,7 +119,19 @@ def num_points_scored(sought_player_name)
   end
 end
 
-# num_points_scored("Jeff Adrien")
+def shoe_size(sought_player_name)
+   game_hash.each do |key, value|
+    value.each do |attribute, data|
+      next unless attribute == :players
+
+      data.each do |player|
+        return player[:shoe] if player[:player_name] == sought_player_name
+      end
+    end
+  end
+
+end
+
 
 
 
