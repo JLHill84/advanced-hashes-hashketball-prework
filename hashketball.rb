@@ -153,6 +153,7 @@ def team_names()
 end
 
 def player_numbers(team_name)
+  numbers = []
   game_hash.each do |key, value|
     value.each do |attribute, data|
       next unless attribute == :players
