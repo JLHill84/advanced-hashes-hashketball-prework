@@ -138,9 +138,7 @@ def team_colors(team_name)
       
       data.do |team|
         return team[:colors] if team[:team_name] == team_name
-      return 
-      
-    
+      end
   end
 end
 
