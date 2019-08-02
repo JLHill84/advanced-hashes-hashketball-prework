@@ -136,7 +136,7 @@ def team_colors(team_name)
     value.each do |attribute, data|
       next unless attribute == :colors
       
-      data.do |team|
+      data.each do |team|
         return team[:colors] if team[:team_name] == team_name
       end
     end
